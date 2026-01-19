@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    min-height: 100vh;
+    background: #f6f9fc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e88e5;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.card {
+    background: white;
+    width: 420px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 6px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forgot {
+    color: #1e88e5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #14a0e3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 26px 0;
+    color: #9ca3af;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.btn-social {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+}
