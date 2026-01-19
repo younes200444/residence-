@@ -7,7 +7,7 @@ COPY frontend/ .
 RUN npm run build
 
 # ---------- Stage 2 : Build Backend ----------
-FROM maven:3.9.0-eclipse-temurin-21 AS backend-build
+FROM maven:3.9.1-eclipse-temurin-21 AS backend-build
 WORKDIR /app/backend
 COPY backEnd/pom.xml ./
 RUN mvn dependency:go-offline
@@ -22,8 +22,4 @@ WORKDIR /app
 COPY --from=backend-build /app/backend/target/*.jar ./backend.jar
 
 # Copier frontend build
-COPY --from=frontend-build /app/frontend/build ./frontend
-
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "backend.jar"]
+COPY --from=frontend-build /app/frontend/build ./fronten
